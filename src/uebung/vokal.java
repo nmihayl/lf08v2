@@ -16,6 +16,14 @@ public class vokal {
         vokale.add("ä");
         vokale.add("ö");
         vokale.add("ü");
+        vokale.add("A");
+        vokale.add("E");
+        vokale.add("O");
+        vokale.add("U");
+        vokale.add("I");
+        vokale.add("Ä");
+        vokale.add("Ö");
+        vokale.add("Ü");
 
         zeichen = JOptionPane.showInputDialog("Geben Sie ein Zeichen ein: ");
 
