@@ -15,8 +15,6 @@ public class kapitalverdopplung {
 
         double kapital = sk;
 
-
-
         while (kapital < 2 * sk) {
             kapital = kapital * (1 + zs/100);
             jahr = jahr + 1;
