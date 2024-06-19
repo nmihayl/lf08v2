@@ -2,28 +2,17 @@ package uebung;
 
 import javax.swing.JOptionPane;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class vokal {
     public static void main(String[] args) {
-        ArrayList<String> vokale = new ArrayList<>();
+        ArrayList<String> vokale = new ArrayList<>(Arrays.asList(
+                "a", "e", "i", "o", "u",
+                "ä", "ö", "ü",
+                "A", "E", "I", "O", "U",
+                "Ä", "Ö", "U"
+        ));
         String zeichen = "";
-
-        vokale.add("a");
-        vokale.add("e");
-        vokale.add("o");
-        vokale.add("u");
-        vokale.add("i");
-        vokale.add("ä");
-        vokale.add("ö");
-        vokale.add("ü");
-        vokale.add("A");
-        vokale.add("E");
-        vokale.add("O");
-        vokale.add("U");
-        vokale.add("I");
-        vokale.add("Ä");
-        vokale.add("Ö");
-        vokale.add("Ü");
 
         zeichen = JOptionPane.showInputDialog("Geben Sie ein Zeichen ein: ");
 
