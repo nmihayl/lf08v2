@@ -12,7 +12,6 @@ public class matrix {
                 } else {
                     System.out.print(" " + zeile + spalte);
                 }
-                System.out.print(" " + zeile + spalte);
             }
             System.out.println();
         }
