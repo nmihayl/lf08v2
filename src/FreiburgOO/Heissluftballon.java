@@ -5,8 +5,8 @@ public class Heissluftballon extends Luftfahrzeug {
     private double korbhoehe;
 
     public Heissluftballon() {
-        this. ballonVolumen = 0.0;
-        this. korbhoehe = 0.0;
+        this.ballonVolumen = 0.0;
+        this.korbhoehe = 0.0;
     }
 
     public double getBallonVolumen() { return this.ballonVolumen; }
