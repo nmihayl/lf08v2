@@ -13,7 +13,6 @@ import java.awt.event.ActionEvent;
 import java.util.Random;
 
 public class wuerfelspiel extends JFrame {
-
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 
@@ -31,13 +30,11 @@ public class wuerfelspiel extends JFrame {
 	}
 
 	public wuerfelspiel() {
-
 		try {
 			  UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 			} catch(Exception e) {
 			  System.out.println("Error setting native LAF: " + e);
 			}
-
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 170, 210);
@@ -110,7 +107,6 @@ public class wuerfelspiel extends JFrame {
 				} else {
 				    lblErgebnisResult.setText(String.valueOf(noPasch));
 				}
-
 			}
 		});
 		btnDice.setBounds(10, 111, 134, 23);
