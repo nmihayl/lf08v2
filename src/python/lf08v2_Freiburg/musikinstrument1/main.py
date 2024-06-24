@@ -9,3 +9,8 @@ def main():
 
 
 main()  # Programm ausführen
+
+
+# Beispiel Destruktor
+def __del__(self):
+    pass
