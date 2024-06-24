@@ -1,20 +1,22 @@
 from abc import ABC, abstractmethod
 
+
 class Musikinstrument:
     _modell = "unbekannt"
     _hersteller = "unbekannt"
     _preis = 0.0
-    #-----------------------------------------------------------
+
+    # -----------------------------------------------------------
     # Konstruktors der Klasse
-    #-----------------------------------------------------------
-    def __init__(self, modell = "unbekannt", hersteller = "unbekannt", preis = 0.0):
+    # -----------------------------------------------------------
+    def __init__(self, modell="unbekannt", hersteller="unbekannt", preis=0.0):
         self._modell = modell
         self._hersteller = hersteller
         self._preis = preis
 
-    #-----------------------------------------------------------
+    # -----------------------------------------------------------
     # Getter und Setter der Klasse
-    #-----------------------------------------------------------
+    # -----------------------------------------------------------
     def get_modell(self):
         return self.__modell
 
@@ -32,13 +34,10 @@ class Musikinstrument:
 
     def set_preis(self, value):
         self.__preis = value
-    #------------------------------------------------------------
+
+    # ------------------------------------------------------------
     # Methoden
-    #-----------------------------------------------------------
+    # -----------------------------------------------------------
     @abstractmethod
     def get_daten(self):
         pass
-
-
-
-

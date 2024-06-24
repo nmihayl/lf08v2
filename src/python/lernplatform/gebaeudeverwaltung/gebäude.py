@@ -1,5 +1,5 @@
 class Gebäude:
-    def __init__(self, adresse = "unbekannt", preis = 0.0, baujahr = 0):
+    def __init__(self, adresse="unbekannt", preis=0.0, baujahr=0):
         self.__adresse = adresse
         self.__preis = preis
         self.__baujahr = baujahr

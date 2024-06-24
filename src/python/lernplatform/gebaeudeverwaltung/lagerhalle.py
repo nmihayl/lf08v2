@@ -1,7 +1,8 @@
 from gebäude import Gebäude
 
+
 class Lagerhalle(Gebäude):
-    def __init__(self, adresse = "unbekannt", preis = 0.0, baujahr = 0, lagerfläche = 0.0):
+    def __init__(self, adresse="unbekannt", preis=0.0, baujahr=0, lagerfläche=0.0):
         super().__init__(adresse, preis, baujahr)
         self.__lagerfläche = lagerfläche
 

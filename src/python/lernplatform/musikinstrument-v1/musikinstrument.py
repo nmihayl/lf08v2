@@ -6,17 +6,17 @@ class Musikinstrument:
     __hersteller = "unbekannt"
     __preis = 0.0
 
-    #-----------------------------------------------------------
+    # -----------------------------------------------------------
     # Konstruktors der Klasse
-    #-----------------------------------------------------------
-    def __init__(self, modell = "unbekannt", hersteller = "unbekannt", preis = 0.0):
+    # -----------------------------------------------------------
+    def __init__(self, modell="unbekannt", hersteller="unbekannt", preis=0.0):
         self.__modell = modell
         self.__hersteller = hersteller
         self.__preis = preis
 
-    #-----------------------------------------------------------
+    # -----------------------------------------------------------
     # Getter und Setter der Klasse
-    #-----------------------------------------------------------
+    # -----------------------------------------------------------
     def get_modell(self):
         return self.__modell
 
@@ -34,9 +34,10 @@ class Musikinstrument:
 
     def set_preis(self, value):
         self.__preis = value
-    #------------------------------------------------------------
+
+    # ------------------------------------------------------------
     # Methoden
-    #-----------------------------------------------------------
+    # -----------------------------------------------------------
     def get_daten(self):
         daten = "Modell: " + self.__modell + "\n" + \
                 "Hersteller: " + self.__hersteller + \
