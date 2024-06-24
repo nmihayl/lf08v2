@@ -4,7 +4,7 @@ from tkinter import ttk
 
 
 def btnClose_click():
-    frmMain.destroy()
+    frmMain.quit()
 
 
 def btnCalc_click():
@@ -15,29 +15,31 @@ def btnCalc_click():
         txtResult.delete(0, 'end')
         txtResult.insert(0, ergebnis)
     except Exception as e:
-        messagebox.showwarning("Warnung", "Es ist folgender Fehler aufgetreten: \n" + e.args[0])
+        messagebox.showwarning(title="Warnung", message="Es ist folgender Fehler aufgetreten: \n" + e.args[0])
 
 
-# Erzeugen des Hauptfensters
+# Hauptfenster erzeugen
 frmMain = tkinter.Tk()
 frmMain.title("Kostenrechner: Tanken")
 frmMain.wm_geometry('350x200')
 
-# Anlegen der Buttons
-btnClose = ttk.Button(frmMain, text="Beenden", command=btnClose_click)
-btnClose.place(x=220, y=150)
-btnCalc = ttk.Button(frmMain, text="Berechnen", command=btnCalc_click)
+btnClose = ttk.Button(frmMain, text="Beenden", command=btnCalc_click())
+btnClose.place(x=229, y=150)
+
+btnCalc = ttk.Button(frmMain, text="Berechnen", command=btnCalc_click())
 btnCalc.place(x=120, y=150)
 
-# Anlegen der Labels
+# Label erzeugen
 lblVolume = ttk.Label(frmMain, text="Menge in Liter")
 lblVolume.place(x=50, y=50)
+
 lblPrice = ttk.Label(frmMain, text="Preis pro Liter in Euro")
-lblPrice.place(x=10, y=80)
+lblVolume.place(x=10, y=80)
+
 lblResult = ttk.Label(frmMain, text="Kosten in Euro")
 lblResult.place(x=50, y=110)
 
-# Anlegen der Entries
+# Entries anlegen
 txtVolume = ttk.Entry(frmMain, foreground="red")
 txtVolume.insert(0, "0")
 txtVolume.place(x=140, y=50)
@@ -46,9 +48,4 @@ txtPrice = ttk.Entry(frmMain, foreground="red")
 txtPrice.insert(0, "0")
 txtPrice.place(x=140, y=80)
 
-txtResult = ttk.Entry(frmMain, foreground="green")
-txtResult.insert(0, "0")
-txtResult.place(x=140, y=110)
-
-# Endlosscheife
 frmMain.mainloop()
